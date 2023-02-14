@@ -2,6 +2,7 @@ const express= require("express");
 const connection = require("../connection");
 const router = express.Router();
 
+// 
 router.post('/create', (req, res, next) => {
     let { name, description, price } = req.body;
     try {
